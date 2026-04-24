@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tanggamus - Sesi Koding</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Tanggamus</h1>
+            <p>Temukan keindaha alam tersembunyi di setiap sudut kabupaten Tanggamus</p>
+        </div>
+    </header>
+
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Cari nama tempat wisata...">
+        <div class="filter-buttons">
+            <button class="btn-filter active" data-category="Semua">Semua</button>
+            <button class="btn-filter" data-category="Pantai">Pantai</button>
+            <button class="btn-filter" data-category="Air Terjun">Air Terjun</button>
+            <button class="btn-filter" data-category="Alam">Alam</button>
+            <button class="btn-filter" data-category="Petualangan">Petualangan</button>
+        </div>
+    </section>
+
+    <div id="destinasi-list" class="grid-container"></div>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div id="destinasi-list" class="grid-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
